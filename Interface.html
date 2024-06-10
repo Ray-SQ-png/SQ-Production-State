@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Seaqueen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="production-status">
+        <div id="date-section" class="date"></div> <!-- Date section -->
+        <div id="working-hours-bar-container">
+            <div id="working-hours-bar"></div>
+            <div id="hour-marker"> <!-- Hour inside the bar -->
+                <span id="current-hour">00:00</span>
+            </div>
+        </div>
+        <div id="total-workers"></div>
+        <div id="production-table-container">
+            <table id="production-table">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Effectif</th>
+                        <th>Modèle</th>
+                        <th>QTE</th>
+                        <th>Pourcentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
